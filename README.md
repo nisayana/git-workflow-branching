@@ -117,9 +117,9 @@ branch up to our remote, which is the GitHub repo. The `git push` command takes
 two arguments: The remote name, commonly `origin` and the branch name, commonly
 `master`.
 
-If we have a branch that does not exist on the remote repository, we use `git
-push -u origin new-branch-name`. If the branch exists on the remote, as in it's
-previously been pushed, we can simply use `git push`.
+If we have a branch that does not exist on the remote repository, we use `git push -u origin new-branch-name`.
+If the branch exists on the remote, as in it's previously been pushed, we can
+simply use `git push`.
 
 < gif of git push >
 
