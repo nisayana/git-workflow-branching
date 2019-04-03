@@ -13,7 +13,7 @@ We're faced with many choices in life; some of these choices are easier, more
 convenient, or "safer" than others.
 
 Consider a computer upgrade. We have the option of buying a new computer, a used
-computer, or maybe there's nothing "wrong" with our current computer&emdash;we
+computer, or maybe there's nothing "wrong" with our current computer&mdash;we
 want more storage space.
 
 The cheapest option is most likely to buy compatible new parts for our existing
