@@ -26,20 +26,20 @@ to be careful not to damage anything else that makes the computer work.
 It would be nice if we could test out our computer upgrading skills first.
 Luckily, we _do_ have this option when coding!
 
-If we had an identical computer that we could experiment, we could worry less
+If we had an identical computer that we could experiment on, we could worry less
 about making any mistakes that could impact our working machine. This is the
 exact concept of branching.
 
 ## Demonstrate the Primary Role of Branching
 
 With code we have a "sandbox", or a safe place, to experiment with different
-outcomes. With Git and GitHub, we're given "branching" as an option so that we
-can _branch out_ from our original repo and any working code it contains, and
-make changes separately. If the code works out, we can keep it! If not, we can
-throw it out and start fresh. What a relief!
+outcomes. With Git, we're given "branching" as an option so that we can _branch
+out_ from our original repo and any working code it contains, and make changes
+separately. If the code works out, we can keep it! If not, we can throw it out
+and start fresh. What a relief!
 
-Branches can be merged into any one branch as long as they belong to the same
-repository.
+> **Tip:** Branches can be merged into any one branch as long as they belong to
+> the same repository.
 
 ## Demonstrate Creating a Branch
 
@@ -47,14 +47,22 @@ Branching allows us to branch out from the original code base and isolate our
 work from working code, whether it's on a solo project or a collaborative
 project.
 
-Changes in the branch that we branched from, or other branches, will not affect
-our branch without taking action to integrate other changes.
+Changes in the branch that we branched _from_, or changes on _other_ branches,
+will not affect our branch unless we take action to integrate those changes.
 
 To create a new branch from the branch we are currently on (in this case, it's
-the default `master` branch), we type the command `git branch new-branch-name`.
+the default `master` branch), we type the command:
+
+```bash
+git branch new-branch-name
+```
 
 If we want to create a new branch _and_ move onto that branch in a single
-command, we can use `git branch -b new-branch-name`.
+command, we can use:
+
+```bash
+git branch -b new-branch-name
+```
 
 We can switch **back to the previous** branch using:
 
@@ -83,7 +91,7 @@ let's make some modifications to this branch.
 First, we're going to make changes in our `README.md` and save them. To confirm
 that changes have been made, we can always check by using `git status`. Now that
 the file has changed from its original state, we can _stage_ these changes,
-which tells `git` that we want to keep track of changes to this file.
+which tells Git that we want to keep track of changes to this file.
 
 < gif of git status >
 
@@ -96,18 +104,26 @@ or discard others that we don't want.
 We can use the same command to view changes across multiple files as well.
 
 If we bulk add files, or know that we want to accept and track all changes that
-have been made to any files, we can use `git add .`. This tells `git` to track
-ALL new changes.
+have been made to any files, we can use:
+
+```bash
+git add .
+```
+This tells Git to track _all_ new changes.
 
 Now that we have some tracked changes to our branch, we will want to make a new
-commit. Typically, developers say "commit small, commit often". This workflow
+commit. Typically, developers say __"commit small, commit often."__ This workflow
 makes it easier to examine what changes have been made over time. we can always
 perfect it later&emdash;that's a big reason why we have branches at our
 disposal.
 
-To commit the changes that have been staged so far we use `git commit -m`. The
-`-m` flag allows us to add message along with the commit. These messages are the
-best way to give context about a change to our future selves or other
+To commit the changes that have been staged so far we use:
+
+```bash
+git commit -m
+```
+The `-m` flag allows us to add message along with the commit. These messages are
+the best way to give context about a change to our future selves or other
 developers. There are a number of rules that may be established depending on how
 you're working, solo or collaboratively, but minimally, we want to limit the
 message to 50 characters explaining what changed:
@@ -122,7 +138,12 @@ branch up to our remote, which is the GitHub repo. The `git push` command takes
 two arguments: The remote name, commonly `origin` and the branch name, commonly
 `master`.
 
-If we have a branch that does not exist on the remote repository, we use `git push -u origin new-branch-name`.
+If we have a branch that does not exist on the remote repository, we use:
+
+```bash
+git push -u origin new-branch-name
+```
+
 If the branch exists on the remote, as in it's previously been pushed, we can
 simply use `git push`.
 
