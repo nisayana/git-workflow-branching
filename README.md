@@ -94,7 +94,7 @@ that changes have been made, we can always check by using `git status`. Now that
 the file has changed from its original state, we can _stage_ these changes,
 which tells Git that we want to keep track of changes to this file.
 
-["git status"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20status.gif)
+!["git status"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20status.gif)
 
 We made a few changes throughout the file and want to see what changed, so we
 will review changes in "chunks" using `git add -p`. We can accept each change,
