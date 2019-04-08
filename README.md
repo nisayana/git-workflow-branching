@@ -76,12 +76,13 @@ To switch to any branch that we're not currently on we use:
 git checkout other-branch-name
 ```
 
-< insert gif of creating a branch from master >
+!["git branch"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/new%20branch.gif)
 
 As we can see, we now have a copy of all of our original branch's progress in
 our new branch.
 
-< show img of identical logs >
+!["git log on master"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/log1.png)
+!["git log on new branch"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/log2.png)
 
 ## Demonstrate Adding and Committing Changes
 
@@ -93,13 +94,13 @@ that changes have been made, we can always check by using `git status`. Now that
 the file has changed from its original state, we can _stage_ these changes,
 which tells Git that we want to keep track of changes to this file.
 
-< gif of git status >
+["git status"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20status.gif)
 
 We made a few changes throughout the file and want to see what changed, so we
 will review changes in "chunks" using `git add -p`. We can accept each change,
 or discard others that we don't want. 
 
-< gif of git add -p being used >
+!["git add -p"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20add%20p.gif)
 
 We can use the same command to view changes across multiple files as well.
 
@@ -128,7 +129,7 @@ developers. There are a number of rules that may be established depending on how
 you're working, solo or collaboratively, but minimally, we want to limit the
 message to 50 characters explaining what changed:
 
-< git commit with message >
+!["Git Commit with Message"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20commit.gif)
 
 
 ## Demonstrate Pushing Branches
@@ -147,7 +148,8 @@ git push -u origin new-branch-name
 If the branch exists on the remote, as in it's previously been pushed, we can
 simply use `git push`.
 
-< gif of git push >
+!["git push without flag"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20push.gif)
+!["git push -u"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20push%20u.gif)
 
 ## Conclusion
 
