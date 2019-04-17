@@ -34,15 +34,15 @@ thrown away using _branches_.
 
 ## Demonstrate Creating a Branch
 
-Branching allows us to branch out from the original code base and isolate our
-work from working code, whether it's on a solo project or a collaborative
-project.
+Branching allows us to branch out _from_ the original code base and isolate our
+new, experimental work from working code. Changes in the branch that we branched
+_from_, or changes on _other_ branches, will not affect our branch unless we take
+action to integrate those changes.
 
-Changes in the branch that we branched _from_, or changes on _other_ branches,
-will not affect our branch unless we take action to integrate those changes.
+We'll get started by _branching_ on a local Git respository.
 
-To create a new branch from the branch we are currently on (in this case, it's
-the default `master` branch), we type the command:
+By default, we start on the `master` branch. To create a new branch from the branch
+we are currently "on," we type the command:
 
 ```bash
 git branch new-branch-name
