@@ -11,33 +11,26 @@
 We're faced with many choices in life; some of these choices are easier, more
 convenient, or "safer" than others.
 
-Consider a computer upgrade. We have the option of buying a new computer, a used
-computer, or maybe there's nothing "wrong" with our current computer&mdash;we
-want more storage space.
+Consider a computer upgrade. Imagine we want to add a new, bigger hard drive.
+However, we've never attempted tinkering with computer hardware before. And our
+only teacher is some video on YouTube. Also, we _really_ don't want to break
+our computer because it's expensive to replace and it's got all our favorite
+cat videos on it.
 
-The cheapest option is most likely to buy compatible new parts for our existing
-computer. However, we've never attempted tinkering with hardware in our computer
-before, and after buying all the tools and parts, we follow an instructional
-video to make the upgrades. In this case, we only have one computer to work on,
-and nowhere to test out opening up a computer and connecting new parts. We have
-to be careful not to damage anything else that makes the computer work.
+We might choose to "do nothing" because the risk is so great. Because of the
+_risk_ we might not want to _try new things_.  Our _freedom_ to try new things
+is being held back by _fear_.
 
-It would be nice if we could test out our computer upgrading skills first.
-Luckily, we _do_ have this option when coding!
+The same can be true in code: if we somehow barely get our code working, we
+might be afraid to go as far as we ought in order to create clean,
+maintainable, understandable code because we're afraid we'll break it.
 
-If we had an identical computer that we could experiment on, we could worry less
-about making any mistakes that could impact our working machine. This is the
-exact concept of branching.
-
-
-With code we have a "sandbox", or a safe place, to experiment with different
-outcomes. With Git, we're given "branching" as an option so that we can _branch
-out_ from our original repo and any working code it contains, and make changes
-separately. If the code works out, we can keep it! If not, we can throw it out
-and start fresh. What a relief!
-
-> **Tip:** Branches can be merged into any one branch as long as they belong to
-> the same repository.
+Git lets you experiment on uncertain code until it works and then bolt that
+working code onto your historical working code. If your experiment blows up,
+you can simply throw it away without damaging your working code. Git lets us go
+from working code to working code, from success to success. We create "parallel
+universes" for safe experimentation which can be integrated ("merged") or
+thrown away using _branches_.
 
 ## Demonstrate Creating a Branch
 
