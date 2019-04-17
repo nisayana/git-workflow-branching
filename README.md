@@ -48,6 +48,29 @@ we are currently "on," we type the command:
 git branch new-branch-name
 ```
 
+This will create a local branch callled `new-branch-name`. If we type
+`git branch`, we will see all the branches.
+
+```shell
+$ git branch
+* master
+  new-branch-name
+```
+
+You'll notice the `*` next to `master`. That's Git telling us that we're
+still "on" master. If we make a new commit, it will go on `master`. We
+need to get "on" `new-branch-name`. To do this we "check out" the
+new branch like so: `git checkout new-branch-name`.
+
+Running `git branch` confirms our "movement."
+
+```shell
+$ git checkout new-branch-name
+$ git branch
+  master
+* new-branch-name
+```
+
 If we want to create a new branch _and_ move onto that branch in a single
 command, we can use:
 
