@@ -2,6 +2,7 @@
 
 ## Learning Goals
 
+- Define a Git branch
 - Demonstrate creating a branch
 - Demonstrate adding and committing changes
 - Demonstrate pushing branches
@@ -32,21 +33,27 @@ from working code to working code, from success to success. We create "parallel
 universes" for safe experimentation which can be integrated ("merged") or
 thrown away using _branches_.
 
+## Define a Git Branch
+
+A branch is a copy of the commit history of the branch you're on, stored under
+a new name.
+
 ## Demonstrate Creating a Branch
 
-Branching allows us to branch out _from_ the original code base and isolate our
+Branching allows us to branch out _from_ the original branch and isolate our
 new, experimental work from working code. Changes in the branch that we branched
-_from_, or changes on _other_ branches, will not affect our branch unless we take
-action to integrate those changes.
+off from the original will not affect the original unless we take action to
+integrate those changes.
 
-> **BIG IDEA**: A branch is a copy of the commit history of the branch you're on,
-stored under a new name.
+The branch we branch from is often called the "parent" branch. The branched off
+branch is ofteen called the "child" branch. Immediately after branching the
+child from the parent, the commit histories are identical. They run the same
+code the same way because they are, effectively, identical.
 
-The history of commits, immediately after creating a branch from one
-branch to another _is identical_.  As commits are made onto one branch of another
-branch, it is said to be "ahead" of its "parent." The "parent" is said to be
-"behind" in terms of commits. When we merge the "child" to the "parent" (as
-we'll see later), the two become "equal" again.
+As commits are made onto the child branch, it is said to be "ahead" of its
+"parent." The "parent" is said to be "behind" in terms of commits. When we merge
+the commits unique to the "child" branch to the "parent" (as we'll see later),
+the two become "equal" again.
 
 We'll get started by _branching_ on a local Git respository.
 
