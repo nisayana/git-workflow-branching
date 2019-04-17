@@ -95,7 +95,16 @@ git checkout -
 As we can see, we now have a copy of all of our original branch's progress in
 our new branch.
 
+Here's the log of commits on `master`. We'll learn more about the log later,
+but right now it shows us that the last commit was commit `08c0087...` (Yep,
+commits are named 128-character long strings made up of numbers and the letters
+`a` through `f`).
+
 !["git log on master"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/log1.png)
+
+And on new branch, we see that the last commit was our friend `08c0087...`
+They're identical!
+
 !["git log on new branch"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/log2.png)
 
 ## Demonstrate Adding and Committing Changes
