@@ -2,7 +2,6 @@
 
 ## Learning Goals
 
-- Demonstrate the primary role of branching
 - Demonstrate creating a branch
 - Demonstrate adding and committing changes
 - Demonstrate pushing branches
@@ -30,7 +29,6 @@ If we had an identical computer that we could experiment on, we could worry less
 about making any mistakes that could impact our working machine. This is the
 exact concept of branching.
 
-## Demonstrate the Primary Role of Branching
 
 With code we have a "sandbox", or a safe place, to experiment with different
 outcomes. With Git, we're given "branching" as an option so that we can _branch
