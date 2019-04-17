@@ -103,9 +103,11 @@ our new branch.
 Now that we've created a new branch, which is our place to safely make changes,
 let's make some modifications to this branch.
 
-First, we're going to make changes in our `README.md` and save them. To confirm
-that changes have been made, we can always check by using `git status`. Now that
-the file has changed from its original state, we can _stage_ these changes,
+First, we're going to make changes in our `README.md` and save them.
+
+> **REMEMBER**: To confirm that changes have been made, we can always check by using `git status`.
+
+Now that the file has changed from its original state, we can _stage_ these changes,
 which tells Git that we want to keep track of changes to this file.
 
 !["git status"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20status.gif)
