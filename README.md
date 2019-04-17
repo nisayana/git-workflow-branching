@@ -39,6 +39,15 @@ new, experimental work from working code. Changes in the branch that we branched
 _from_, or changes on _other_ branches, will not affect our branch unless we take
 action to integrate those changes.
 
+> **BIG IDEA**: A branch is a copy of the commit history of the branch you're on,
+stored under a new name.
+
+The history of commits, immediately after creating a branch from one
+branch to another _is identical_.  As commits are made onto one branch of another
+branch, it is said to be "ahead" of its "parent." The "parent" is said to be
+"behind" in terms of commits. When we merge the "child" to the "parent" (as
+we'll see later), the two become "equal" again.
+
 We'll get started by _branching_ on a local Git respository.
 
 By default, we start on the `master` branch. To create a new branch from the branch
