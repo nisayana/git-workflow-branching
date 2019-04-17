@@ -113,8 +113,8 @@ which tells Git that we want to keep track of changes to this file.
 !["git status"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20status.gif)
 
 We made a few changes throughout the file and want to see what changed, so we
-will review changes in "chunks" using `git add -p`. We can accept each change,
-or discard others that we don't want. 
+will review changes in "chunks" using `git add -p`. We can stage each change,
+or pass over others that we don't want. 
 
 !["git add -p"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20add%20p.gif)
 
