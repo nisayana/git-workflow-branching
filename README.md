@@ -171,9 +171,10 @@ Here we configured Git to use `atom` as the editor for commit messages.
 ## Demonstrate Pushing Branches
 
 We've created a new branch, committed some changes, and now we should push this
-branch up to our remote, which is the GitHub repo. The `git push` command takes
+branch up to our remote repo, a GitHub repo. The `git push` command takes
 two arguments: The remote name, commonly `origin` and the branch name, commonly
-`master`.
+`master`. The remote `origin` is the conventional name for the default remote.
+Just like how `master` is the default name for the default branch.
 
 If we have a branch that does not exist on the remote repository, we use:
 
@@ -181,8 +182,8 @@ If we have a branch that does not exist on the remote repository, we use:
 git push -u origin new-branch-name
 ```
 
-If the branch exists on the remote, as in it's previously been pushed, we can
-simply use `git push`.
+If the branch exists on the remote, as in we've used the previous command before,
+we can simply use `git push`.
 
 !["git push without flag"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20push.gif)
 !["git push -u"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20push%20u.gif)
@@ -191,10 +192,7 @@ simply use `git push`.
 
 Branching allows developers to make edits to a code base while isolating their
 work from other work. We can create branches, back them up to remote locations,
-and continue to work with them locally. It's a standard practice to have a
-system in place for managing different versions of the same code base. It allows
-us to have a "safe space" for making edits without affecting the primary code
-base.
+and continue to work with them locally.
 
 ## Resources
 
