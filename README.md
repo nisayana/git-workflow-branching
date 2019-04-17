@@ -118,27 +118,34 @@ or pass over others that we don't want.
 
 !["git add -p"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20add%20p.gif)
 
-We can use the same command to view changes across multiple files as well.
+If we know we want all the changes in a file we can add the whole file:
 
-If we bulk add files, or know that we want to accept and track all changes that
-have been made to any files, we can use:
+```bash
+git add file-name
+```
+
+And if we know we want all the changes in all the files in our current directory, we can use:
 
 ```bash
 git add .
 ```
-This tells Git to track _all_ new changes.
 
-Now that we have some tracked changes to our branch, we will want to make a new
-commit. Typically, developers say __"commit small, commit often."__ This workflow
-makes it easier to examine what changes have been made over time. we can always
-perfect it later&emdash;that's a big reason why we have branches at our
-disposal.
+> **QUESTION**: Why not ***always*** use `git add .`? When developing we often make more
+> changes than we remember. We might make changes that weren't part of the fix or we might
+> accidentally write our TODO list inside of a code file. Adding piece-by-piece gives us
+> a chance to make sure we want to add everything Git knows has changed. We can use the
+> other approaches when needed, but you might commit some junk. Developers say
+> __"commit small, commit often."__ There are even more advanced Git tools that will help
+> you debug your code and find mistakes and they work better with smaller, more-frequent
+> commit histories.
 
-To commit the changes that have been staged so far we use:
+Now that we have some staged changes ready for our branch, we will want to make a new
+commit. To commit the changes that have been staged so far we use:
 
 ```bash
 git commit -m
 ```
+
 The `-m` flag allows us to add message along with the commit. These messages are
 the best way to give context about a change to our future selves or other
 developers. There are a number of rules that may be established depending on how
