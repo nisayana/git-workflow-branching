@@ -154,6 +154,19 @@ message to 50 characters explaining what changed:
 
 !["Git Commit with Message"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/git%20commit.gif)
 
+If we leave off the `-m` flag, Git will ask your operating system which editor
+you have configured the shell to use to edit your commit messages. Git will
+give you pre-filled text file to edit. When you save and quit from your editor,
+vim will use this message as the commit.
+
+When getting started, it's wisest to use `-m` but if you want to change Git's
+editor, you'll use the following command:
+
+```bash
+$ git config --global core.editor "atom --wait"
+```
+
+Here we configured Git to use `atom` as the editor for commit messages.
 
 ## Demonstrate Pushing Branches
 
