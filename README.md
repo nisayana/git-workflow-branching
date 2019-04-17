@@ -78,16 +78,16 @@ command, we can use:
 git branch -b new-branch-name
 ```
 
-We can switch **back to the previous** branch using:
-
-```bash
-git checkout -
-```
-
 To switch to any branch that we're not currently on we use:
 
 ```bash
 git checkout other-branch-name
+```
+
+As a shortcut, we can switch **back to the previous** branch using:
+
+```bash
+git checkout -
 ```
 
 !["git branch"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/new%20branch.gif)
