@@ -1,59 +1,20 @@
-# Git: Working with Local Branches
+# Working with Local Branches
 
 ## Learning Goals
 
-- Define a Git branch
-- Demonstrate creating a branch
-- Demonstrate adding and committing changes
-- Demonstrate pushing branches
+- Create a branch
+- Add and commit changes
+- Push a branch
 
 ## Introduction
 
-We're faced with many choices in life; some of these choices are easier, more
-convenient, or "safer" than others.
+Many developers and organizations use Git branches to keep track of their work.
+It’s important that we understand how to work with branches on both our local
+machine _as well as_ on a shared resource, like GitHub. Being able to share
+branches means that all the advantages of branch-based development are
+available both for individuals ***and*** organizations.
 
-Consider a computer upgrade. Imagine we want to add a new, bigger hard drive.
-However, we've never attempted tinkering with computer hardware before. And our
-only teacher is some video on YouTube. Also, we _really_ don't want to break
-our computer because it's expensive to replace and it's got all our favorite
-cat videos on it.
-
-We might choose to "do nothing" because the risk is so great. Because of the
-_risk_ we might not want to _try new things_.  Our _freedom_ to try new things
-is being held back by _fear_.
-
-The same can be true in code: if we somehow barely get our code working, we
-might be afraid to go as far as we ought in order to create clean,
-maintainable, understandable code because we're afraid we'll break it.
-
-Git lets you experiment on uncertain code until it works and then bolt that
-working code onto your historical working code. If your experiment blows up,
-you can simply throw it away without damaging your working code. Git lets us go
-from working code to working code, from success to success. We create "parallel
-universes" for safe experimentation which can be integrated ("merged") or
-thrown away using _branches_.
-
-## Define a Git Branch
-
-A branch is a copy of the commit history of the branch you're on, stored under
-a new name.
-
-## Demonstrate Creating a Branch
-
-Branching allows us to branch out _from_ the original branch and isolate our
-new, experimental work from working code. Changes in the branch that we branched
-off from the original will not affect the original unless we take action to
-integrate those changes.
-
-The branch we branch from is often called the "parent" branch. The branched off
-branch is ofteen called the "child" branch. Immediately after branching the
-child from the parent, the commit histories are identical. They run the same
-code the same way because they are, effectively, identical.
-
-As commits are made onto the child branch, it is said to be "ahead" of its
-"parent." The "parent" is said to be "behind" in terms of commits. When we merge
-the commits unique to the "child" branch to the "parent" (as we'll see later),
-the two become "equal" again.
+## Create a Branch
 
 We'll get started by _branching_ on a local Git respository.
 
@@ -123,7 +84,7 @@ They're identical!
 
 !["git log on new branch"](https://curriculum-content.s3.amazonaws.com/prework/git-workflow/log2.png)
 
-## Demonstrate Adding and Committing Changes
+## Add and Commit Changes
 
 Now that we've created a new branch, which is our place to safely make changes,
 let's make some modifications to this branch.  First, we're going to make
@@ -209,7 +170,7 @@ $ git config --global core.editor "atom --wait"
 
 Here we configured Git to use `atom` as the editor for commit messages.
 
-## Demonstrate Pushing Branches
+## Push a Branch
 
 We've created a new branch, committed some changes, and now we should push this
 branch up to our remote repo, a GitHub repo. The `git push` command takes two
@@ -244,7 +205,4 @@ and continue to work with them locally.
 
 ## Resources
 
-[Pushing to a remote](https://help.github.com/en/articles/pushing-to-a-remote)
-[Git Branch](https://www.atlassian.com/git/tutorials/using-branches)
-[3.1 Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-[Using branches](https://backlog.com/git-tutorial/using-branches/)
+- [Pushing to a remote](https://help.github.com/en/articles/pushing-to-a-remote)
