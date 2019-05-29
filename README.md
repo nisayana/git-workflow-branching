@@ -16,7 +16,7 @@ available both for individuals ***and*** organizations.
 
 ## Create a Branch
 
-We'll get started by _branching_ on a local Git respository.
+We'll get started by _branching_ on a local Git repository.
 
 By default, we start on the `master` branch. To create a new branch from the branch
 we are currently "on," we type the command:
@@ -25,7 +25,7 @@ we are currently "on," we type the command:
 git branch new-branch-name
 ```
 
-This will create a local branch callled `new-branch-name`. If we type
+This will create a local branch called `new-branch-name`. If we type
 `git branch`, we will see all the branches.
 
 ```shell
@@ -120,7 +120,7 @@ And if we **know** we want ***all the changes in all the files in our current di
 git add .
 ```
 
-Lastly, if we want all the changes to all the files in a subdirectory, we can
+Lastly, if we want all the changes to all the files in a sub-directory, we can
 use:
 
 ```bash
