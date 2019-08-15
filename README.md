@@ -52,7 +52,7 @@ If we want to create a new branch _and_ move onto that branch in a single
 command, we can use:
 
 ```bash
-git branch -b new-branch-name
+git checkout -b new-branch-name
 ```
 
 To switch to any branch that we're not currently on we use:
